@@ -38,7 +38,7 @@ const AuthContextProvider = ({children}) => {
             console.log(error)
         });
     }
-
+ 
     const logout = () => {
         const url = logoutApi();
         axios({method: 'post',
