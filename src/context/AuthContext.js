@@ -34,6 +34,7 @@ const AuthContextProvider = ({children}) => {
         }).then(resp =>{
             setUser(resp.data);
         }).catch(error => {
+            alert("usuario o clave invalido");
             console.log(error)
         });
     }
